@@ -16,3 +16,7 @@ Thumbs.db
 
 # Research output (generated)
 research/
+
+# dotter
+/.dotter/cache.toml
+/.dotter/local.toml
