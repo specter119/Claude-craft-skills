@@ -1,0 +1,113 @@
+---
+name: report
+description: >
+  报告内容结构与组织。当需要创建 report/paper/thesis/文档 时激活。
+  支持 Markdown 或 Typst 输出。Typst 技术参考 typst skill (references/report.md)。
+allowed-tools: Task, Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
+---
+
+# Report - 结构与内容
+
+专注于报告的**内容结构**和**组织框架**。支持 Markdown 或 Typst 输出。
+
+## Knowledge Activation
+
+Apply these frameworks based on goal (Claude knows the full methodology):
+
+| Goal | Framework | Authority Source |
+|------|-----------|------------------|
+| Persuade executives | SCQA, Pyramid Principle | Barbara Minto (*The Pyramid Principle*), McKinsey |
+| Academic paper | IMRaD | Scientific publishing standard |
+| Technical docs | Inverted pyramid | Journalism, Divio documentation system |
+| Business proposal | Problem-Solution-Impact | McKinsey/BCG consulting |
+| Case study | STAR method | Behavioral interview format |
+
+**Writing Quality** (apply intuitively, not as checklist):
+- **Logic**: Barbara Minto's MECE principle, "So What" test
+- **Data viz**: Edward Tufte's data-ink ratio, Stephen Few's dashboard design
+- **Clarity**: Plain language principles, active voice
+
+---
+
+## 激活条件
+
+- 创建报告、论文、技术文档
+- 关键词: "报告", "论文", "文档", "report", "paper", "thesis"
+
+## 技术参考
+
+如需 Typst 输出，详见：`typst` skill → `references/report.md`
+
+---
+
+## 框架选择决策树
+
+```plain
+你的目标是什么？
+├─ 说服管理层/决策者 → SCQA 或金字塔原理
+├─ 发表学术论文 → IMRaD
+├─ 编写技术文档 → 倒金字塔
+├─ 融资/商业提案 → Problem-Solution-Impact (参考 slide skill)
+├─ 分享案例经验 → STAR (参考 slide skill)
+└─ 教育培训 → 故事弧 (参考 slide skill)
+```
+
+---
+
+## 输出格式选择
+
+| 场景 | 推荐格式 | 原因 |
+|------|---------|------|
+| 快速文档、内部沟通 | Markdown | 简单、通用、易编辑 |
+| 正式报告、学术论文 | Typst | 排版精美、PDF 输出 |
+| 需要复杂表格/公式 | Typst | 原生支持 |
+| 需要协作编辑 | Markdown | Git 友好 |
+
+---
+
+## 工作流
+
+```plain
+┌─────────────────────────────────────────────────────────────────┐
+│  1. 确定内容框架                                                  │
+│     └─ 根据目标选择框架 (Knowledge Activation 表格)               │
+├─────────────────────────────────────────────────────────────────┤
+│  2. 组织内容结构                                                  │
+│     ├─ 应用所选框架的结构                                         │
+│     ├─ 规划图表和表格位置                                         │
+│     └─ 收集支撑数据                                              │
+├─────────────────────────────────────────────────────────────────┤
+│  3. 选择输出格式                                                  │
+│     ├─ Markdown → 直接写入 .md                                   │
+│     └─ Typst → 参考 typst skill (references/report.md)          │
+├─────────────────────────────────────────────────────────────────┤
+│  4. 质量自检                                                      │
+│     ├─ MECE: 论点独立且完整？                                     │
+│     ├─ So What: 每段都有价值？                                    │
+│     └─ Data-ink: 每个元素都传递信息？                             │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 与其他 Skill 配合
+
+```plain
+[research skill] → 调研收集信息
+        ↓
+[report] → 选择框架、组织内容
+        ↓
+选择输出格式：
+├─ Markdown → 直接输出 .md
+└─ Typst → [typst skill] → 编译 PDF
+```
+
+---
+
+## 最佳实践
+
+1. **结论先行**：先给答案，再展开论证 (Pyramid Principle)
+2. **MECE 检验**：论点之间相互独立、完全穷尽
+3. **So What 测试**：每个内容都能回答"那又怎样？"
+4. **数据支撑**：关键论点有数据或引用支持
+5. **读者视角**：根据受众调整术语和深度

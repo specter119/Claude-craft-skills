@@ -1,0 +1,54 @@
+{
+  // Markdown lint configuration
+  // https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+  "default": true,
+
+  // === Disabled: Too strict or not applicable ===
+
+  // Line length - disabled for prose
+  "MD013": false,
+
+  // Heading style - allow both atx (#) and setext (===)
+  "MD003": false,
+
+  // Single H1 - not always applicable
+  "MD025": false,
+
+  // Ordered list prefix style - allow any numbering
+  "MD029": false,
+
+  // Blanks around fences - often impractical in lists
+  "MD031": false,
+
+  // Blanks around lists - often impractical
+  "MD032": false,
+
+  // Allow inline HTML (needed for some formatting)
+  "MD033": false,
+
+  // Allow bare URLs (common in docs)
+  "MD034": false,
+
+  // Allow emphasis used instead of heading
+  "MD036": false,
+
+  // First line heading - disabled (frontmatter may come first)
+  "MD041": false,
+
+  // Link fragment validation - may have false positives
+  "MD051": false,
+
+  // Table column style - too strict
+  "MD060": false,
+
+  // === Enabled with custom config ===
+
+  // Allow multiple headings with same content (siblings only)
+  "MD024": {
+    "siblings_only": true
+  },
+
+  // Require language for fenced code blocks
+  "MD040": true
+}
