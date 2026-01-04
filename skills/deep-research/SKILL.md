@@ -4,7 +4,6 @@ description: >
   Conduct comprehensive research with persistent output. Features: user clarification,
   supervisor-based dynamic parallelization, source archival, and structured findings.
   Activate on: "research", "调研", "研究", "深入了解", "investigate", "explore".
-allowed-tools: Task, Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 ---
 
 # Deep Research Skill v2

@@ -1,7 +1,6 @@
 ---
 name: slide
 description: "Slide narrative framework and visual design. This skill should be used when creating slides or presentations. Activates Claude's knowledge of Nancy Duarte, Edward Tufte, Gestalt principles, and other presentation design expertise."
-allowed-tools: Task, Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 ---
 
 # Slide - Narrative & Visual Design

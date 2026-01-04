@@ -9,22 +9,22 @@ default_target_type = "symbolic"
 
 # Individual Skills
 [deep-research.files]
-'skills/deep-research' = '~/.config/claude/skills/deep-research'
+'skills/deep-research' = '~/.config/opencode/skill/deep-research'
 
 [genimg.files]
-'skills/genimg' = '~/.config/claude/skills/genimg'
+'skills/genimg' = '~/.config/opencode/skill/genimg'
 
 [report.files]
-'skills/report' = '~/.config/claude/skills/report'
+'skills/report' = '~/.config/opencode/skill/report'
 
 [slide.files]
-'skills/slide' = '~/.config/claude/skills/slide'
+'skills/slide' = '~/.config/opencode/skill/slide'
 
 [typst.files]
-'skills/typst' = '~/.config/claude/skills/typst'
+'skills/typst' = '~/.config/opencode/skill/typst'
 
 [wide-research.files]
-'skills/wide-research' = '~/.config/claude/skills/wide-research'
+'skills/wide-research' = '~/.config/opencode/skill/wide-research'
 
 # Meta Packages
 [research-skills]
@@ -34,4 +34,11 @@ depends = ['deep-research', 'wide-research']
 depends = ['report', 'slide', 'typst']
 
 [default]
-depends = ['deep-research', 'genimg', 'report', 'slide', 'typst', 'wide-research']
+depends = [
+  'deep-research',
+  'genimg',
+  'report',
+  'slide',
+  'typst',
+  'wide-research',
+]

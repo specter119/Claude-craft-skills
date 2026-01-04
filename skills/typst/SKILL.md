@@ -1,7 +1,6 @@
 ---
 name: typst
 description: "Typst technical foundation layer providing syntax reference, toolchain commands, package management, and diagram solution selection (diagraph/D2/oxdraw). Serves as technical reference for slide and report skills."
-allowed-tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 
 # Typst Technical Foundation

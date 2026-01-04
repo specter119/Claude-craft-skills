@@ -3,7 +3,6 @@ name: report
 description: >
   报告内容结构与组织。当需要创建 report/paper/thesis/文档 时激活。
   支持 Markdown 或 Typst 输出。Typst 技术参考 typst skill (references/report.md)。
-allowed-tools: Task, Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 ---
 
 # Report - 结构与内容
